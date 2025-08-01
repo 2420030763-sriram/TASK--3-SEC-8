@@ -1,0 +1,130 @@
+srira@DESKTOP-3POEN3M MINGW64 ~/Desktop/Task -3 sec 8 (master)
+$ git config --global user.name "sriram"
+
+srira@DESKTOP-3POEN3M MINGW64 ~/Desktop/Task -3 sec 8 (master)
+$ git config --global user.email "2420030763@klh.edu.in"
+
+srira@DESKTOP-3POEN3M MINGW64 ~/Desktop/Task -3 sec 8 (master)
+$ git add index.html style.css
+
+srira@DESKTOP-3POEN3M MINGW64 ~/Desktop/Task -3 sec 8 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+        modified:   style.css
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        klu.jpg
+
+
+srira@DESKTOP-3POEN3M MINGW64 ~/Desktop/Task -3 sec 8 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+        modified:   style.css
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        klu.jpg
+
+
+srira@DESKTOP-3POEN3M MINGW64 ~/Desktop/Task -3 sec 8 (master)
+$ git log
+commit b747f225828f1e27080f8f75564a45e8e3b8e0c0 (HEAD -> master)
+Author: sriram <2420030763@klh.edu.in>
+Date:   Fri Aug 1 09:23:15 2025 +0530
+
+    all files created
+
+srira@DESKTOP-3POEN3M MINGW64 ~/Desktop/Task -3 sec 8 (master)
+$ git diff
+
+srira@DESKTOP-3POEN3M MINGW64 ~/Desktop/Task -3 sec 8 (master)
+$ git diff
+
+srira@DESKTOP-3POEN3M MINGW64 ~/Desktop/Task -3 sec 8 (master)
+$ git checkout --index.html
+error: unknown option `index.html'
+usage: git checkout [<options>] <branch>
+   or: git checkout [<options>] [<branch>] -- <file>...
+
+    -b <branch>           create and checkout a new branch
+    -B <branch>           create/reset and checkout a branch
+    -l                    create reflog for new branch
+    --[no-]guess          second guess 'git checkout <no-such-branch>' (default)
+    --[no-]overlay        use overlay mode (default)
+    -q, --[no-]quiet      suppress progress reporting
+    --[no-]recurse-submodules[=<checkout>]
+                          control recursive updating of submodules
+    --[no-]progress       force progress reporting
+    -m, --[no-]merge      perform a 3-way merge with the new branch
+    --[no-]conflict <style>
+                          conflict style (merge, diff3, or zdiff3)
+    -d, --[no-]detach     detach HEAD at named commit
+    -t, --[no-]track[=(direct|inherit)]
+                          set branch tracking configuration
+    -f, --[no-]force      force checkout (throw away local modifications)
+    --[no-]orphan <new-branch>
+                          new unborn branch
+    --[no-]overwrite-ignore
+                          update ignored files (default)
+    --[no-]ignore-other-worktrees
+                          do not check if another worktree is using this branch
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -p, --[no-]patch      select hunks interactively
+    --[no-]ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+    --[no-]pathspec-from-file <file>
+                          read pathspec from file
+    --[no-]pathspec-file-nul
+                          with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+srira@DESKTOP-3POEN3M MINGW64 ~/Desktop/Task -3 sec 8 (master)
+$ git checkout -- index.html
+
+srira@DESKTOP-3POEN3M MINGW64 ~/Desktop/Task -3 sec 8 (master)
+$ git reset index.html
+Unstaged changes after reset:
+M       index.html
+
+srira@DESKTOP-3POEN3M MINGW64 ~/Desktop/Task -3 sec 8 (master)
+$ git remote add origin "https://github.com/2420030763-sriram/TASK--3-SEC-8.git
+> https://github.com/2420030763-sriram/TASK--3-SEC-8.git
+ *  History restored 
+
+
+srira@DESKTOP-3POEN3M MINGW64 ~/Desktop/Task -3 sec 8 (master)
+$ git remote add origin "https://github.com/2420030763-sriram/TASK--3-SEC-8.git"
+
+srira@DESKTOP-3POEN3M MINGW64 ~/Desktop/Task -3 sec 8 (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 226 bytes | 226.00 KiB/s, done. 
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/2420030763-sriram/TASK--3-SEC-8.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+srira@DESKTOP-3POEN3M MINGW64 ~/Desktop/Task -3 sec 8 (master)
+$ git add .
+
+srira@DESKTOP-3POEN3M MINGW64 ~/Desktop/Task -3 sec 8 (master)
+$ git push -u origin master
+branch 'master' set up to track 'origin/master'.
+Everything up-to-date
+
+srira@DESKTOP-3POEN3M MINGW64 ~/Desktop/Task -3 sec 8 (master)
+$ git commit -m "logo master"
+[master c399b8a] logo master
+ 3 files changed, 45 insertions(+)
+ create mode 100644 klu.jpg
